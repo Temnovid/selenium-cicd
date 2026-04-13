@@ -10,7 +10,7 @@ def test_successful_login(driver):
     inventory_page = InventoryPage(driver)
     
     # 3. Perform Actions
-    login_page.login_to_app("standard_user", "secret_sauce")
+    login_page.login_to_app("standard_user", "wrong_sauce")
     
     # 4. Assertions (Verifying the result)
     assert "inventory.html" in driver.current_url
